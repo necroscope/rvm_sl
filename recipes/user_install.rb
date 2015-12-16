@@ -7,8 +7,8 @@
 # All rights reserved - Do Not Redistribute
 #
 
-username = node['rvm']['user']['name']
-home = node['rvm']['user']['home']
+username = 'vagrant'
+home = '/home/vagrant'
 keyserver = node['rvm']['keyserver']
 recv_keys = node['rvm']['recv-keys']
 
