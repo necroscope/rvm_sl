@@ -26,11 +26,11 @@ action :create do
     only_if { ruby_default }
   end
 
-  execute 'modifying_permissions' do
-    environment 'HOME' => home, 'USER' => user_name
-    command "chown -R #{user_name}:rvm #{home}/.rvm"
-    user user_name
-    group 'rvm'
-    action :run
-  end
+  #execute 'modifying_permissions' do
+  #  environment 'HOME' => home, 'USER' => user_name
+  3  command "chown -R #{user_name}:rvm #{home}/.rvm"
+  #  user user_name
+  #  group 'rvm'
+  #  action :run
+  #end
 end
